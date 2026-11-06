@@ -1,0 +1,14 @@
+\begin{tabular}{lcccccccccccc}
+\toprule
+ & \multicolumn{3}{c}{Noisy, single} & \multicolumn{3}{c}{Noisy, double} & \multicolumn{3}{c}{Clean, single} & \multicolumn{3}{c}{Sparse, single}\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-13}
+Model & IV & Viol.\,\% & Coll. & IV & Viol.\,\% & Coll. & IV & Viol.\,\% & Coll. & IV & Viol.\,\% & Coll.\\
+\midrule
+Data-only & 0.021 & 18.50 & 0/5 & 0.021 & 19.08 & 0/5 & 0.008 & 0.00 & 0/5 & 0.010 & 9.39 & 0/5\\
+PINN & 0.020 & 0.51 & 0/5 & 0.021 & 19.07 & 0/5 & 0.008 & 0.00 & 0/5 & 0.010 & 9.47 & 0/5\\
+DCPINN & 0.019 & 0.10 & 1/5 & 0.013 & 0.26 & 0/5 & 0.008 & 0.00 & 0/5 & 0.010 & 0.00 & 0/5\\
+WamL, paper's rule & 0.247 & 0.00 & 5/5 & 1.053 & 54.84 & 5/5 & 0.222 & 0.00 & 5/5 & 1.889 & 0.00 & 5/5\\
+WamL, no PDE loss & 0.045 & 0.00 & 2/5 & 0.484 & 29.98 & 5/5 & 0.318 & 27.40 & 3/5 & 0.073 & 0.00 & 3/5\\
+WamL, gradient floor & 0.015 & 0.29 & 1/5 & 0.023 & 0.00 & 0/5 & 0.008 & 0.00 & 0/5 & 0.010 & 0.00 & 0/5\\
+\bottomrule
+\end{tabular}

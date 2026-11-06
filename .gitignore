@@ -1,0 +1,16 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+.DS_Store
+
+# LaTeX build output
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Course submission, not part of the public code
+PINN_Volatility_Calibration_Proposal*.pdf
